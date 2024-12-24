@@ -64,7 +64,7 @@ table.body {
 }
 table.container {
   background: #1C283D;
-  width: 890px;
+  width: 800px;
   margin: 0 auto;
   Margin: 0 auto;
   text-align: inherit;
@@ -88,12 +88,12 @@ table.container table.row {
 th.columns {
   margin: 0 auto;
   Margin: 0 auto;
-  padding-left: 50px;
+  padding-left: 40px;
   padding-bottom: 30px;
 }
 
 th.columns.last {
-  padding-right: 50px;
+  padding-right: 40px;
 }
 
 th.columns table {
@@ -101,51 +101,51 @@ th.columns table {
 }
 
 th.large-3 {
-  width: 172.5px;
-  padding-left: 25px;
-  padding-right: 25px;
+  width: 160px;
+  padding-left: 20px;
+  padding-right: 20px;
 }
 
 th.large-3.last {
-  padding-right: 50px;
+  padding-right: 40px;
 }
 
 th.large-6 {
-  width: 395px;
-  padding-left: 25px;
-  padding-right: 25px;
+  width: 360px;
+  padding-left: 20px;
+  padding-right: 20px;
 }
 
 th.large-6.first {
-  padding-left: 50px;
+  padding-left: 40px;
 }
 
 th.large-6.last {
-  padding-right: 50px;
+  padding-right: 40px;
 }
 
 th.large-9 {
-  width: 617.5px;
-  padding-left: 25px;
-  padding-right: 25px;
+  width: 560px;
+  padding-left: 20px;
+  padding-right: 20px;
 }
 
 th.large-9.first {
-  padding-left: 50px;
+  padding-left: 40px;
 }
 
 th.large-12 {
-  width: 840px;
-  padding-left: 25px;
-  padding-right: 25px;
+  width: 760px;
+  padding-left: 20px;
+  padding-right: 20px;
 }
 
 th.large-12.first {
-  padding-left: 50px;
+  padding-left: 40px;
 }
 
 th.large-12.last {
-  padding-right: 50px;
+  padding-right: 40px;
 }
 
 th.expander {
@@ -169,6 +169,46 @@ img.float-center {
 
 th.columns[valign=middle] {
   vertical-align: middle;
+}
+
+.hide-for-large {
+  display: none;
+  mso-hide: all;
+  overflow: hidden;
+  max-height: 0;
+  font-size: 0;
+  width: 0;
+  line-height: 0;
+}
+@media only screen and (max-width: 840px) {
+  .hide-for-large {
+    display: block !important;
+    width: auto !important;
+    overflow: visible !important;
+    max-height: none !important;
+    font-size: inherit !important;
+    line-height: inherit !important;
+  }
+}
+
+table.body table.container .hide-for-large * {
+  mso-hide: all;
+}
+
+@media only screen and (max-width: 840px) {
+  table.body table.container .hide-for-large {
+    display: table !important;
+    width: 100% !important;
+  }
+}
+
+@media only screen and (max-width: 840px) {
+  table.body table.container .show-for-large {
+    display: none !important;
+    width: 0;
+    mso-hide: all;
+    overflow: hidden;
+  }
 }
 
 body,
@@ -249,7 +289,7 @@ a:visited {
   color: #ef5d62;
 }
 
-@media only screen and (max-width: 940px) {
+@media only screen and (max-width: 840px) {
   table.body img {
     width: auto;
     height: auto;
