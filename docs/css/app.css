@@ -308,13 +308,13 @@ a:visited {
     padding-left: 20px !important;
     padding-right: 20px !important;
   }
-  th.small-4 {
+  th.small-5 {
     display: inline-block !important;
-    width: 33.333333% !important;
+    width: 41.666666% !important;
   }
-  th.small-8 {
+  th.small-7 {
     display: inline-block !important;
-    width: 66.666666% !important;
+    width: 58.333333% !important;
   }
   th.small-12 {
     display: inline-block !important;
@@ -339,6 +339,7 @@ body h3 {
   line-height: 1.26;
 }
 body h4 {
+  font-weight: 700;
   letter-spacing: 1px;
   text-transform: uppercase;
 }
